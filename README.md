@@ -1,10 +1,3 @@
----
-Presentation:     Containers: Beyond the Hype
-Author:           Cody Bunch
-Date:             2017-10-19
-categories:  containers, docker, lxc, vmug, k8s
----
-
 # Atlanta VMUG Usercon - Containers: Beyond the hype
 
 Herin lie the slides, images, and Dockerfile to review this session as I presented it.
