@@ -21,8 +21,10 @@ cd atlanta-vmug-2017-10-19/
 docker pull jamtur01/docker-presentation
 
 # Run the preso
-cd  ~/projects/atlanta-vmug-2017-10-19
-docker run -p 8000:8000 --name docker_presentation   -v /Users/bunchc/projects/atlanta-vmug-2017-10-19/images:/opt/presentation/images   -v /Users/bunchc/projects/atlanta-vmug-2017-10-19/slides:/opt/presentation/slides  -d jamtur01/docker-presentation
+docker run -p 8000:8000 --name docker_presentation \
+  -v $PWD/images:/opt/presentation/images \
+  -v $PWD/slides:/opt/presentation/slides \
+  -d jamtur01/docker-presentation
 ```
 
 Then browse to [http://localhost:8000](http://localhost:8000). To view speaker notes, press S to view in speaker mode.
